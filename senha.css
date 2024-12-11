@@ -32,24 +32,29 @@
 }
 
 header{
-    position: absolute;
+    position: relative;
     display: flex;
     width: 100%;
     height: auto;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: -117%;
+    margin-top: 6%;
 }
 
-
+.titulo{
+    margin-bottom: 3%;
+    font-size: 0.87vw;
+    color: #6d6d6d;
+    font-family: 'ADLaM Display';
+}
 
 .linha{
+    margin-top: 3%;
     z-index: 1000;
     width: 89%;
-    height: 0.75vh;
+    height: 0.5vh;
     background-color: #227B30;
-    margin-top: -4%;
     position: relative;
 }
 
