@@ -53,7 +53,9 @@ header{
     position: relative;
 }
 
-
+p{
+    word-break: break-all;
+}
 
 .campos{
     display: flex;

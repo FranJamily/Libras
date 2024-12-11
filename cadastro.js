@@ -1,6 +1,10 @@
 let campos = document.querySelectorAll(".input-campo");
 let botao = document.querySelector("button");
 
+function salvarNome() {
+    const nome = document.querySelector('.nome').value; // Obtém o valor do campo nome
+    localStorage.setItem('nomeUsuario', nome); // Armazena o nome no localStorage
+}
 // Função para limpar campos
 function limparCampos() {
     campos.forEach(campo => {

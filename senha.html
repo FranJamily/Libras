@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bhavuka:wght@400&display=swap" />
-    <title>Document</title>
+    <title>Senha</title>
     <link rel="stylesheet" href="senha.css">
 </head>
 <body>
@@ -26,17 +26,17 @@
                 </div>
                 <div class="campo">
                     <h2>Nome completo</h2>
-                    <p>Diego Guimaraes Costa</p>
+                    <p class="nome-usuario">Diego Guimaraes Costa</p>
                     <div class="linha-campo"></div>
                 </div>
                 <div class="campo">
                     <h2>Convênio</h2>
-                    <p>SUS</p>
+                    <p class="paragrafo sus">SUS</p>
                     <div class="linha-campo"></div>
                 </div>
                 <div class="campo ultimo-campo">
                     <h2>Especialidade médica</h2>
-                    <p>Neurologista</p>
+                    <p class="paragrafo-esp">Neurologista</p>
                     <div class="linha-campo"></div>
                 </div>
                 
@@ -52,6 +52,32 @@
             <p class="turma">Turma Técnico em Informática 2022 12101 Senac Picos-PI</p>
         </div>
     </div>
-    
+    <script>
+        function carregarNome() {
+            const nome = localStorage.getItem('nomeUsuario'); // Recupera o nome do localStorage
+            if (nome) {
+                document.querySelector('.nome-usuario').textContent = nome; // Define o texto da tag <p>
+            }
+        }
+
+        function carregarPlano() {
+            const planoSelecionado = localStorage.getItem('planoSelecionado'); // Recupera o plano selecionado
+            if (planoSelecionado) {
+                document.querySelector('.paragrafo.sus').textContent = planoSelecionado; // Define o texto no parágrafo
+            }
+        }
+
+        function carregarEspecialidade() {
+            const especialidadeSelecionada = localStorage.getItem('especialidadeSelecionada'); // Recupera a especialidade
+            if (especialidadeSelecionada) {
+                document.querySelector('.paragrafo-esp').textContent = especialidadeSelecionada; // Define o texto no parágrafo
+            }
+        }
+        window.onload = function () {
+            carregarNome();
+            carregarPlano();
+            carregarEspecialidade();
+        };
+    </script>
 </body>
 </html>

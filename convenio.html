@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plano</title>
+    <title>Convênio</title>
     <link rel="stylesheet" href="style5.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=ADLaM Display:wght@400&display=swap">
     
@@ -24,7 +24,7 @@
                     <div class="grid-campos">
                         <div class="campo">
                             <a href="ajuda.html">
-                                <button>
+                                <button onclick="selecionarPlano('Plano de saúde')">
                                     <p class="plano_saude">Plano de saúde</p>
                                     <img src="img/plano.svg">
                                 </button>
@@ -32,7 +32,7 @@
                         </div>
                         <div class="campo">
                             <a href="pagamento.html">
-                                <button>
+                                <button onclick="selecionarPlano('Particular')">
                                     <p class="particular">Particular</p>
                                     <img src="img/particular.svg">
                                 </button>
@@ -40,12 +40,11 @@
                         </div>
                         <div class="campo">
                             <a href="ajuda.html">
-                                <button>
-                                    Sus
+                                <button onclick="selecionarPlano('SUS')">
+                                    <p>SUS</p>
                                     <img src="img/sus.svg">
                                 </button>
                             </a>
-                            
                         </div>
                     </div>
                     <img class="enfermeira" src="img/enfermeira.png">
@@ -68,5 +67,11 @@
       <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
       </script>
+    <script>
+
+        function selecionarPlano(plano) {
+        localStorage.setItem('planoSelecionado', plano); // Armazena no localStorage
+        }
+    </script>
 </body>
 </html>

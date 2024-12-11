@@ -24,16 +24,15 @@
                     <div class="grid-campos">
                         <div class="campo">
                             <a href="agendamento.html">
-                                <button>
+                                <button onclick="selecionarEspecialidade('Clínico Geral')">
                                     Clínico Geral
                                     <img class="clinico" src="img/clinico-geral.svg">
                                 </button>
                             </a>
-                            
                         </div>
                         <div class="campo">
                             <a href="agendamento.html">
-                                <button>
+                                <button onclick="selecionarEspecialidade('Ortopedista')">
                                     Ortopedista
                                     <img class="ortopedista" src="img/ortopedista.svg">
                                 </button>
@@ -41,7 +40,7 @@
                         </div>
                         <div class="campo">
                             <a href="agendamento.html">
-                                <button>
+                                <button onclick="selecionarEspecialidade('Nutricionista')">
                                     Nutricionista
                                     <img class="nutricionista" src="img/nutricionista.svg">
                                 </button>
@@ -49,7 +48,7 @@
                         </div>
                         <div class="campo">
                             <a href="agendamento.html">
-                                <button>
+                                <button onclick="selecionarEspecialidade('Neurologista')">
                                     Neurologista
                                     <img class="neurologista" src="img/neurologista.svg">
                                 </button>
@@ -57,7 +56,7 @@
                         </div>
                         <div class="campo">
                             <a href="agendamento.html">
-                                <button>
+                                <button onclick="selecionarEspecialidade('Exames')">
                                     Exames
                                     <img class="exames" src="img/exames.svg">
                                 </button>
@@ -92,5 +91,11 @@
       <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
       </script>
+    <script>
+        // Função para armazenar a especialidade selecionada
+        function selecionarEspecialidade(especialidade) {
+            localStorage.setItem('especialidadeSelecionada', especialidade); // Armazena no localStorage
+        }
+    </script>
 </body>
 </html>
