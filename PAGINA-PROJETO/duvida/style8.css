@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.background{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    background-color: #D9D9D9;
+}
+
+.enfermeira{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.caixa-branca{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    background-color: #D9D9D9;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+header{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3%;
+}
+
+.titulo{
+    font-size: 1vw;
+    color: #6d6d6d;
+    font-family: 'ADLaM Display';
+}
+
+.linha{
+    z-index: 1000;
+    width: 90%;
+    height: 0.75vh;
+    background-color: #227B30;
+    margin-top: 3%;
+
+}
+
+.cadastro{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    /* border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px; */
+}
+
+.header-cadastro{
+    display: flex;
+    position: relative;
+    width: 96%;
+    height: 12%;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-cadastro img{
+    margin-right: auto;
+    height: 80px;
+    width: 80px;
+}
+
+.campos{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+
+.campos h1{
+    font-size: 3vw;
+    font-family: 'Adlam display';
+    position: absolute;
+}
+
+
+.grid-campos{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: auto;
+    width: auto;
+    gap: 5vw;
+    justify-items: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+}
+
+.grid-campos > :nth-child(3) {
+    grid-column: span 2; /* Esse item ocupa as 3 colunas na terceira linha */
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-family: 'ADLaM Display';
+    font-size: 1.5vw;
+}
+
+button{
+    border: none;
+    background: linear-gradient(0deg, #3fe157 22%, #227b30 84%);
+    width: 21vw;
+    height: 60px;
+    border-radius: 15px;
+    font-family: 'Adlam display';
+    font-size: 1.75vw;  
+    display: flex;
+    align-items: center;
+    text-align: left;
+    text-indent: 8.2vw;
+    transition: transform 0.2s ease;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.campo button img{
+    margin-left: auto;
+    margin-right: 7%;
+    position: initial;
+    height: 92%;
+    width: 17%;
+    right: 0;
+}
+
+.campo .b-sim{
+    width: 13%;
+}
+.campo .b-nao{
+    width: 13%;
+    height: 75%;
+}
+
+.campos img{
+    bottom: 0;
+    right: 0;
+    height: 125px;
+    width: 9%;
+}
+
+.rodape{
+
+    bottom: 0;
+    z-index: 1;
+    width: 98%;
+    display: flex;
+    color: #053905;
+    height: auto;
+    font-size: 1.5vw;
+    margin-bottom: 0.1%;
+}
+.direitos{
+    left: 0;
+}
+
+.turma{
+    margin-left: auto;
+    right: 0;
+}
+

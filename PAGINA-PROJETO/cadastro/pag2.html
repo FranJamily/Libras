@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=ADLaM Display:wght@400&display=swap">
+    
+</head>
+<body>
+    <div class="background">
+        <div class="caixa-branca">
+            <header class="titulo">
+                <h1>Recepcionista em Serviços de Saúde</h1>
+                <div class="linha"></div>
+            </header>
+            <div class="cadastro">
+                <div class="header-cadastro">
+                    <img src="../img/ferramenta.png">
+                    <h1>Cadastro</h1>
+                </div>
+                <div class="campos">
+                    <div class="grids">
+                        <h2 class="dados_usuario">Dados de Usuário</h2>
+                    
+                        <div class="grid-campos">
+                            <div class="campo">
+                                <h2>Nome</h2>
+                                <input type="text" id="nome" class="nome input-campo"></input>
+                            </div>
+                            <div class="campo">
+                                <h2>CPF</h2>
+                                <input id="cpf" class="cpf input-campo"></input>
+                            </div>
+                            <div class="campo">
+                                <h2>Data de Nascimento</h2>
+                                <input type="date" min="1900-01-01" max="2024-12-11" id="data_nascimento" class="data-nascimento input-campo"></input>
+                            </div>
+                            <div class="campo">
+                                <h2>N° do Cartão do Sus</h2>
+                                <input id="cartao_sus" class="c_sus input-campo"></input>
+                            </div>
+                        </div>
+                    
+                        <h2 class="endereco">Endereço</h2>
+                    
+                        <div class="grid-campos">
+                            <div class="campo">
+                                <h2>CEP</h2>
+                                <input id="cep" class="cep input-campo"></input>
+                            </div>
+                            <div class="campo">
+                                <h2>Bairro</h2>
+                                <input id="bairro" class="bairro input-campo"></input>
+                            </div>
+                            <div class="campo">
+                                <h2>Cidade</h2>
+                                <input id="cidade" class="cidade input-campo"></input>
+                            </div>
+                            <div class="campo">
+                                <h2>N° da Casa</h2>
+                                <input id="n_casa" class="n_casa input-campo"></input>
+                            </div>
+                            <div class="campo">
+                                <h2>Complemento</h2>
+                                <input id="complemento" class="complemento input-campo"></input>
+                            </div>
+                            <div class="campo">
+                                <h2>Telefone</h2>
+                                <input id="telefone" class="telefone input-campo"></input>
+                            </div>
+                    
+                        </div>
+                    </div>          
+                    <button>Cadastre-se</button>
+                    <img class="enfermeira" src="../img/enfermeira.png">
+                </div>
+
+            </div>
+
+        </div>
+        <div class="rodape">
+            <p class="direitos">Todos os direitos reservados.</p>
+            <p class="turma">Turma Técnico em Informática 2022 12101 Senac Picos-PI</p>
+        </div>
+    </div>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+    <script src="cadastro.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=ADLaM Display:wght@400&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Salsa:wght@400&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bhavuka:wght@400&display=swap" />
+
+</head>
+<body>
+    <div class="logo-container">
+        <h1>Projeto</h1>
+        <div class="logo-image">
+            <img src="../img/logo.svg" alt="Logo" class="logo">
+        </div>
+        <div class="logo-text bottom">Uma colaboração entre a Turma de Recepcionista em Serviço de Saúde e o Técnico em informática do Senac de Picos</div>
+    </div>
+    <div class="background">
+        <div class="caixa-branca">
+            <header class="titulo">
+                <h1>Recepcionista em Serviços de Saúde</h1>
+                <div class="linha"></div>
+            </header>
+            <div class="cadastro">
+                <div class="header-cadastro">
+                    <img src="../img/ferramenta.png">
+                    <h1>Login</h1>
+                </div>
+                <div class="campos">
+                    <div class="grid-campos">
+                        <div class="campo">
+                            <h2>CPF</h2>
+                            <input class="cpf input-campo"></input>
+                        </div>
+                    </div>
+                    <div class="entrar">
+                        <button>Entrar</button>
+                    </div>
+                    <img class="enfermeira" src="../img/enfermeira.png">
+                </div>
+            </div>
+
+        </div>
+        <div class="rodape">
+            <p class="direitos">Todos os direitos reservados.</p>
+            <p class="turma">Turma Técnico em Informática 2022 12101 Senac Picos-PI</p>
+        </div>
+    </div>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <script src="scripts.js"></script>
+</body>
+</html>
