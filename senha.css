@@ -66,6 +66,8 @@ header{
     align-items: center;
     background-image: url(../img/fundo3.png);  
     background-repeat: no-repeat; /* Evita repetição */
+    background-size: cover; /* Faz a imagem cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
 }
 
 
@@ -122,5 +124,25 @@ header{
    
     
 
+}
+
+.rodape{
+
+    bottom: 0;
+    z-index: 1;
+    width: 98%;
+    display: flex;
+    color: #053905;
+    height: auto;
+    font-size: 1.5vw;
+    margin-bottom: 0.1%;
+}
+.direitos{
+    left: 0;
+}
+
+.turma{
+    margin-left: auto;
+    right: 0;
 }
 
