@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bhavuka:wght@400&display=swap" />
     <title>Senha</title>
     <link rel="stylesheet" href="senha.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=ADLaM Display:wght@400&display=swap">
 </head>
 <body>
     <div class="background">
@@ -17,7 +18,7 @@
             <div class="campos">
 
                 <div class="numero">
-                    <p>Senha: 1</p>
+                    <p id="senha">Senha: 1</p>
                 </div>
 
                 <div class="img-deco">
@@ -42,6 +43,7 @@
 
 
             </div>
+            <button class="emitir" onclick="aumentarSenha()">Emitir</button>
 
             
             
@@ -52,6 +54,16 @@
         </div>
     </div>
     <script>
+        function aumentarSenha() {
+            const senhaElemento = document.getElementById('senha');
+            let senhaAtual = parseInt(senhaElemento.textContent.replace('Senha: ', ''));
+            senhaAtual += 1;  // Aumenta o valor da senha em 1
+            senhaElemento.textContent = `Senha: ${senhaAtual}`;  // Atualiza o conteúdo exibido
+
+            // Redireciona para a página index.html
+            window.location.href = 'index.html';
+        }
+
         function carregarNome() {
             const nome = localStorage.getItem('nomeUsuario'); // Recupera o nome do localStorage
             if (nome) {

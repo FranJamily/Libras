@@ -60,5 +60,20 @@
         new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
     <script src="scripts.js"></script>
+    <script>
+        window.onload = function () {
+            // Recupera o valor da senha do localStorage
+            let senhaAtual = parseInt(localStorage.getItem('senhaAtual'));
+
+            // Aumenta a senha em 1
+            senhaAtual += 1;
+
+            // Atualiza a exibição da senha
+            document.getElementById('senha').textContent = `Senha: ${senhaAtual}`;
+
+            // Salva a nova senha no localStorage
+            localStorage.setItem('senhaAtual', senhaAtual);
+        };
+    </script>
 </body>
 </html>

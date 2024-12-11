@@ -71,6 +71,23 @@ header{
     background-position: center; /* Centraliza a imagem */
 }
 
+button{
+    margin-bottom: 4%;
+    color: black;
+    font-family: 'ADLaM Display';
+    width: 30%;
+    height: 50px;
+    background: linear-gradient(0deg, #3fe157 22%, #227b30 84%);
+    border: none;
+    border-radius: 15px;
+    font-size: 1.4vw;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+button:hover{
+    transform: scale(1.04);
+}
 
 .campo{
     color: rgb(94, 93, 93);
