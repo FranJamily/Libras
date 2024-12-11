@@ -43,7 +43,7 @@
 
 
             </div>
-            <button class="emitir" onclick="aumentarSenha()">Emitir</button>
+            <button class="emitir" onclick="emitirESeguir()">Emitir</button>
 
             
             
@@ -54,13 +54,13 @@
         </div>
     </div>
     <script>
-        function aumentarSenha() {
+        function emitirESeguir() {
+            // Salva a senha no localStorage
             const senhaElemento = document.getElementById('senha');
             let senhaAtual = parseInt(senhaElemento.textContent.replace('Senha: ', ''));
-            senhaAtual += 1;  // Aumenta o valor da senha em 1
-            senhaElemento.textContent = `Senha: ${senhaAtual}`;  // Atualiza o conteúdo exibido
+            localStorage.setItem('senhaAtual', senhaAtual);
 
-            // Redireciona para a página index.html
+            // Redireciona para a página de login (index.html)
             window.location.href = 'index.html';
         }
 
@@ -88,6 +88,10 @@
             carregarNome();
             carregarPlano();
             carregarEspecialidade();
+            const senhaAtual = parseInt(localStorage.getItem('senhaAtual'));
+
+            // Exibe a senha no elemento da página
+            document.getElementById('senha').textContent = `Senha: ${senhaAtual}`;
         };
     </script>
 </body>

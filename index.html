@@ -62,17 +62,19 @@
     <script src="scripts.js"></script>
     <script>
         window.onload = function () {
-            // Recupera o valor da senha do localStorage
+            // Recupera a senha do localStorage
             let senhaAtual = parseInt(localStorage.getItem('senhaAtual'));
 
-            // Aumenta a senha em 1
-            senhaAtual += 1;
+            if (isNaN(senhaAtual)) {
+                senhaAtual = 1; // Caso não haja um valor válido de senha, começa de 1
+            }
 
-            // Atualiza a exibição da senha
-            document.getElementById('senha').textContent = `Senha: ${senhaAtual}`;
+            // Aumenta a senha
+            senhaAtual += 1;
 
             // Salva a nova senha no localStorage
             localStorage.setItem('senhaAtual', senhaAtual);
+
         };
     </script>
 </body>
